@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import { Button, Select } from 'element-ui'
-import App from './App.vue'
+import App from './Addition.vue'
 
 Vue.component(Button.name, Button)
 Vue.component(Select.name, Select)
@@ -10,6 +10,6 @@ Vue.component(Select.name, Select)
  */
 
 new Vue({
-  el: '#app',
+  el: '#addition',
   render: h => h(App)
 })

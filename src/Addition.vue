@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="addition">
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <label>Number1:</label>
@@ -8,7 +8,7 @@
     <label>Number2:</label>
     <input type="number" v-model.number="number2">
     <br>
-    <button @click="getSum">Click</button>
+    <el-button @click="getSum">Click</el-button>
     <br>
     <br>
     <p>{{ result }}</p>
@@ -18,7 +18,7 @@
 <script>
 import { getJSON } from "./requests.js";
 
-var api = '/api/addition';
+var api = 'http://localhost:5000/api/addition';
 
 export default {
   data () {
@@ -54,7 +54,7 @@ export default {
 </script>
 
 <style>
-#app {
+#addition {
   font-family: Helvetica, sans-serif;
   text-align: center;
 }

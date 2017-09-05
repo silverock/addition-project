@@ -1,13 +1,10 @@
 import Vue from 'vue'
-import { Button, Select } from 'element-ui'
+import { Button, Select, Input } from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 import App from './Addition.vue'
 
-Vue.component(Button.name, Button)
-Vue.component(Select.name, Select)
-/* or
- * Vue.use(Button)
- * Vue.use(Select)
- */
+Vue.use(Button)
+Vue.use(Input)
 
 new Vue({
   el: '#addition',

@@ -1,14 +1,17 @@
 <template>
   <div id="addition">
     <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <label>Number1:</label>
-    <input type="number" v-model.number="number1">
+    <h1>Addition demo app</h1>
+    <div class="input-number">
+    <label>Number 1:</label>
+    <el-input type="number" v-model="number1" style="width:100px"></el-input>
+    </div>
+    <div class="input-number">
+    <label>Number 2:</label>
+    <el-input type="number" v-model="number2" style="width:100px"></el-input>
+    </div>
     <br>
-    <label>Number2:</label>
-    <input type="number" v-model.number="number2">
-    <br>
-    <el-button @click="getSum">Click</el-button>
+    <el-button @click="getSum">Add</el-button>
     <br>
     <br>
     <p>{{ result }}</p>
@@ -57,5 +60,9 @@ export default {
 #addition {
   font-family: Helvetica, sans-serif;
   text-align: center;
+}
+.input-number {
+  display: inline-block;
+  margin: 20px;
 }
 </style>

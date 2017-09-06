@@ -4,11 +4,11 @@
     <h1>Addition demo app</h1>
     <div class="input-number">
     <label>Number 1:</label>
-    <el-input type="number" v-model="number1" style="width:100px"></el-input>
+    <el-input-number v-model="number1" style="width:200px"></el-input-number>
     </div>
     <div class="input-number">
     <label>Number 2:</label>
-    <el-input type="number" v-model="number2" style="width:100px"></el-input>
+    <el-input-number v-model="number2" style="width:200px"></el-input-number>
     </div>
     <br>
     <el-button @click="getSum">Add</el-button>
